@@ -1,4 +1,4 @@
-# Booking Service (Variant B)
+# Booking Service
 
 Микросервис бронирования мест, реализованный на **TypeScript + Fastify**.
 
