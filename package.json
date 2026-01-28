@@ -1,0 +1,26 @@
+{
+  "name": "booking-service",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate deploy",
+    "seed": "ts-node src/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.15.0",
+    "amqplib": "^0.10.3",
+    "fastify": "^4.22.0",
+    "fastify-plugin": "^4.5.0",
+    "ioredis": "^5.3.2"
+  },
+  "devDependencies": {
+    "prisma": "^4.15.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
+  }
+}
